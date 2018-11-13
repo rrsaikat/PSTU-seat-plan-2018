@@ -1,0 +1,81 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "5c03d299288c1b4d595ea7f83540d505",
+    "entities": [
+      {
+        "tableName": "student",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `start_roll` INTEGER NOT NULL, `end_roll` INTEGER NOT NULL, `unit` TEXT, `building` TEXT, `floor` TEXT, `hall_number` TEXT, `room_number` TEXT, `room_name` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "start_roll",
+            "columnName": "start_roll",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "end_roll",
+            "columnName": "end_roll",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "building",
+            "columnName": "building",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "floor",
+            "columnName": "floor",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hall_number",
+            "columnName": "hall_number",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "room_number",
+            "columnName": "room_number",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "room_name",
+            "columnName": "room_name",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"5c03d299288c1b4d595ea7f83540d505\")"
+    ]
+  }
+}

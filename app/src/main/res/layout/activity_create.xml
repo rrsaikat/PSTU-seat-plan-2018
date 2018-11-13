@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:padding="10dp"
+        card_view:cardBackgroundColor="@color/background_material_light"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2.5dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_startRoll"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Start roll"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_endRoll"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="End roll"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Floor"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Unit"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_building"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Building"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_hall_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Hall number"
+                    android:inputType="text|number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_room_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Room number"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_room_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Room name"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/bt_home"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Home" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
